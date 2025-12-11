@@ -23,15 +23,14 @@ This project combines classical data analytics with LLM-powered content creation
 
 ```mermaid
 flowchart TD
-A[CSV Data Upload] --> B[Outlier Detection Logic (Python/Pandas)]
-B --> C[Summary Insights & Metrics]
-C --> D[LLM Prompt Generation]
-D --> E[Slide Content & Structure Created]
-E --> F[Slide Rendering with Images]
-F --> G[Downloadable PPTX Output]
+    A[CSV Data Upload] --> B[Outlier Detection Logic (Python/Pandas)]
+    B --> C[Summary Insights & Metrics]
+    C --> D[LLM Prompt Generation]
+    D --> E[Slide Content & Structure Created]
+    E --> F[Slide Rendering With Images]
+    F --> G[Downloadable PPTX Output]
 ```
 
----
 
 ## 🛠️ Tech Stack
 
