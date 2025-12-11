@@ -22,7 +22,6 @@ This project combines classical data analytics with LLM-powered content creation
 
 
 ## 💗 How It Works
-
 ```mermaid
 flowchart TD
     A[CSV Data Upload] --> B[Outlier Detection Logic (Python/Pandas)]
