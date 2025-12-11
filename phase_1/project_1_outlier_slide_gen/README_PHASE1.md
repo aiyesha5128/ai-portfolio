@@ -19,7 +19,7 @@ This project combines classical data analytics with LLM-powered content creation
 
 ---
 
-## 🧠 How It Works
+
 
 ## 💗 How It Works
 
