@@ -22,7 +22,8 @@ This project combines classical data analytics with LLM-powered content creation
 
 
 ## 💗 How It Works
-```mermaid
+
+```
 flowchart TD
     A[CSV Data Upload] --> B[Outlier Detection Logic (Python/Pandas)]
     B --> C[Summary Insights & Metrics]
@@ -31,6 +32,7 @@ flowchart TD
     E --> F[Slide Rendering With Images]
     F --> G[Downloadable PPTX Output]
 ```
+
 
 
 ## 🛠️ Tech Stack
