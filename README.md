@@ -1,5 +1,3 @@
-Absolutely! Here is a **professionally polished, recruiter-friendly** version of your root `README.md` for the **ai-portfolio** repository.
-You can copy-paste directly into GitHub — formatting is optimized for visibility and clarity. 🚀
 
 ---
 
