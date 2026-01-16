@@ -82,7 +82,7 @@ ai-portfolio/
 │
 ├─ README.md
 ├─ phase_1/
-│  └─ project_1_outlier_slide_gen/
+│  └─ project_1_outlier_slide_gen/(completed)
 │     ├─ app.py
 │     ├─ slide_gen.py
 │     ├─ model.py
@@ -92,7 +92,7 @@ ai-portfolio/
 │     └─ README_PHASE1.md
 │
 └─ phase_2/
-   ├─ project_2_ai_teacher_assistant/ (WIP)
+   ├─ project_2_ai_teacher_assistant/ (completed)
    └─ project_3_plant_identification/ (Planned)
 
 </details> ```
