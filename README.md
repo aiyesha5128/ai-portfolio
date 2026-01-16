@@ -41,7 +41,7 @@ This portfolio is structured into skill-building **phases**, each containing han
 | Project                                                      | Description                                                               | Status         | Folder                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------- | -------------- | ----------------------------------------- |
 | **Project 2 — AI Teacher Assistant (RAG + Semantic Kernel)** | Document-aware Q&A assistant with hybrid retrieval and citation grounding | completed      | `phase_2/project_2_ai_teacher_assistant/` |
-| **Project 3 — Plant Identification Agent**                   | Houseplant recognition + care guidance with vision models + app UI        |                | `phase_2/project_3_plant_identification/` |
+| **Project 3 — Plant Identification Agent**                   | Houseplant recognition + care guidance with vision models + app UI        |  In progress              | `phase_2/project_3_plant_identification/` |
 
 ---
 
