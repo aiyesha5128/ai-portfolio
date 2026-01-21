@@ -31,4 +31,5 @@ Answer questions from PDF context
 Summarize PDF content for students
 Generate quiz questions with answers
 ## Demo Screenshot
-![AI Teacher Assistant Demo](outputs/demo.png)
+![AI Teacher Assistant Demo](assets/demo.png)
+
