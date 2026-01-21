@@ -28,7 +28,8 @@ This portfolio is structured into skill-building **phases**, each containing han
 ---
 
 ## Demo Screenshot
-![AI Teacher Assistant Demo](assets/demo.png)
+![AI Teacher Assistant Demo](phase_2/project_2_ai_teacher_assistant/assets/demo.png)
+
 
 ## 🛠️ Technologies & Skills Used
 | Category | Tools |
