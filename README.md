@@ -26,6 +26,10 @@ This portfolio is structured into skill-building **phases**, each containing han
 | **Project 2 — AI Teacher Assistant (RAG + Semantic Kernel)** | Document-aware Q&A assistant with lightweight retrieval and prompt grounding | ✅ Completed | `phase_2/project_2_ai_teacher_assistant/` |
 | **Project 3 — Plant Identification Agent** | Houseplant recognition & care guidance using vision models | 📝 Planned | `phase_2/project_3_plant_identification/` |
 ---
+
+## Demo Screenshot
+![AI Teacher Assistant Demo](assets/demo.png)
+
 ## 🛠️ Technologies & Skills Used
 | Category | Tools |
 |---|---|
