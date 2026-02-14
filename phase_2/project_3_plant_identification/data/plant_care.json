@@ -1,0 +1,25 @@
+{
+  "snake plant": {
+    "light": "Low to bright indirect light",
+    "water": "Every 2-3 weeks, allow soil to dry",
+    "soil": "Well-draining cactus mix",
+    "temperature": "15-30°C",
+    "pet_safe": "Mildly toxic to pets"
+  },
+
+  "pothos": {
+    "light": "Low to bright indirect",
+    "water": "Once a week",
+    "soil": "Regular potting mix",
+    "temperature": "18-29°C",
+    "pet_safe": "Toxic to pets"
+  },
+
+  "spider plant": {
+    "light": "Bright indirect",
+    "water": "Weekly",
+    "soil": "Loose well-draining",
+    "temperature": "13-27°C",
+    "pet_safe": "Pet friendly"
+  }
+}
