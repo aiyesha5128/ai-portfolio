@@ -4,6 +4,10 @@ import os
 sys.path.append(os.path.abspath("."))
 
 import streamlit as st
+
+st.title("🌿 Plant Identification Agent")
+st.caption("MVP — JSON-based prediction (Vision API integration coming next)")
+
 from src.care import get_care
 st.title("🌿 Plant Identification Agent (MVP)")
 st.subheader("Sample Care Lookup")

@@ -37,6 +37,18 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 ![AI Teacher Assistant Demo](phase_2/project_2_ai_teacher_assistant/assets/demo.png)
 
 ---
+---
+
+## 🌿 Plant Identification Agent — MVP Demo
+
+![PlantPal MVP](phase_2/project_3_plant_identification/assets/demo.png)
+
+Current Version:
+- Streamlit UI
+- Plant name prediction (JSON-based logic)
+- Care instruction display
+- Vision API integration coming next
+
 
 ## 🛠 Tech Stack
 Python | Azure OpenAI | Azure AI Search | Semantic Kernel | Streamlit | FastAPI | LangChain
