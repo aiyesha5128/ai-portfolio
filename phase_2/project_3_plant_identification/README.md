@@ -1,7 +1,12 @@
 # 🌿 Project 3 — Plant Identification Agent
+This project is part of Phase 2 of my AI Portfolio.
 
-## Overview
-PlantPal is an AI-powered houseplant identification assistant that uses vision models to identify plants and provide care instructions.
+## 📸 Demo
+![PlantPal MVP](assets/demo.png)
+
+## 🔎 Overview
+PlantPal is a houseplant identification assistant designed with a modular AI-ready architecture.
+The current MVP version uses structured JSON data with a Streamlit UI to demonstrate prediction flow and care instruction delivery. Vision API integration for image-based plant recognition is planned for the next phase.
 
 ## Goals
 - Upload plant image
@@ -9,30 +14,32 @@ PlantPal is an AI-powered houseplant identification assistant that uses vision m
 - Provide watering, sunlight, and soil guidance
 - Build modular AI pipeline
 
-## Tech Stack
+## 🛠 Tech Stack
 - Python
 - Streamlit (UI)
-- Vision API (Azure / Google)
-- LLM for care guidance
+- JSON-based structured data
+- Modular Architecture (UI → Logic → Data)
 - Environment-secured API keys
 
-## Current Status
-🛠 In Development
+## 🚧 Current Status
+🛠 MVP Built (Vision API integration pending)
 
-## Planned Features
-- Image upload interface
-- Top-3 prediction output
-- Care instruction generator
-- Local fallback database
-- Deployable web app version
+## 🚀 Next Phase (Upcoming Enhancements)
 
-## Folder Structure
+-- Image upload interface  
+- Top-3 prediction output  
+- Vision API integration  
+- Local fallback plant database  
+- Deployable web app version  
+
+
+## 🗂 Folder Structure
+
+```text
 project_3_plant_identification/
-│
-├── app.py
-├── plant_identifier.py
-├── care_generator.py
-├── utils.py
+├── app/
 ├── assets/
+├── data/
+├── src/
+├── requirements.txt
 └── README.md
-
