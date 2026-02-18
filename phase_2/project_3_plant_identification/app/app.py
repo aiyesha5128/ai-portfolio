@@ -11,8 +11,21 @@ st.caption("MVP — JSON-based prediction (Vision API integration coming next)")
 from src.care import get_care
 st.title("🌿 Plant Identification Agent (MVP)")
 st.subheader("Sample Care Lookup")
+
 from src.care import get_care, get_plant_names
 
+uploaded_file = st.file_uploader(
+    "Upload a plant image",
+    type=["jpg", "jpeg", "png"]
+)
+if uploaded_file is not None:
+    from services.image_identifier import identify_plant
+    
+    predicted_plant, confidence = identify_plant(uploaded_file)
+st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+st.success(f"Predicted Plant: {predicted_plant}")
+st.write(f"Confidence: {confidence}")
+plant_name = predicted_plant
 plant = st.selectbox(
     "Choose a plant",
     get_plant_names()
