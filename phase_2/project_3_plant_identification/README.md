@@ -83,16 +83,21 @@ This separation ensures:
 ## 🗂 Folder Structure
 
 
-```text
-project_3_plant_identification/
-├── app/              # Streamlit UI
-├── services/         # Prediction logic
-├── src/              # Care data handling
-├── data/             # JSON plant database
-├── assets/           # Demo images
+project_3_plantpal/
+├── app/                # Streamlit UI
+├── services/           # Prediction logic (v1 mock + v2 vision API)
+│   ├── image_identifier_v1.py
+│   └── image_identifier_v2.py
+├── src/                # Care data handling
+├── data/               # JSON plant database
+├── assets/             # Demo images
 ├── requirements.txt
 └── README.md
----
+
+### Version Notes
+
+- v1 → Mock prediction logic (randomized output)
+- v2 → Hugging Face Vision model integration (API-based inference)
 
 ## 💡 Learning Outcome
 
