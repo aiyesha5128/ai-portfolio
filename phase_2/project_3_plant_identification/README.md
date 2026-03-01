@@ -83,16 +83,20 @@ This separation ensures:
 ## 🗂 Folder Structure
 
 
+## 📂 Folder Structure
+
+```text
 project_3_plantpal/
-├── app/                # Streamlit UI
-├── services/           # Prediction logic (v1 mock + v2 vision API)
-│   ├── image_identifier_v1.py
-│   └── image_identifier_v2.py
-├── src/                # Care data handling
-├── data/               # JSON plant database
-├── assets/             # Demo images
+├── app/                 # Streamlit UI
+├── services/            # Prediction logic
+│   ├── image_identifier_v1.py   # Mock logic
+│   └── image_identifier_v2.py   # Vision API integration
+├── src/                 # Care data handling
+├── data/                # JSON plant database
+├── assets/              # Demo images
 ├── requirements.txt
 └── README.md
+```
 
 ### Version Notes
 
