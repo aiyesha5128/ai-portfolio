@@ -1,63 +1,107 @@
-# 🌿 Project 3 — Plant Identification Agent (MVP)
+# 🌿 Project 3 — PlantPal v1.0 — Plant Identification Agent (MVP)
 
-This project is part of Phase 2 of my AI Portfolio.
+This project is part of **Phase 2** of my AI Engineering Portfolio.
 
 ---
 
 ## 📸 Demo
+
 ![PlantPal MVP](assets/demo.png)
 
 ---
 
 ## 🔎 Overview
-PlantPal is a houseplant identification assistant designed with a modular AI-ready architecture.
 
-The current MVP version uses structured JSON data with a Streamlit UI to demonstrate prediction flow and care instruction delivery. Vision API integration for image-based plant recognition is planned for the next phase.
+PlantPal is a modular AI-ready houseplant identification assistant built using Streamlit.
+
+This MVP demonstrates a complete AI workflow architecture:
+
+- Image upload handling
+- Prediction pipeline integration (`identify_plant()` service layer)
+- Confidence score display
+- Structured care instruction lookup from JSON
+- Graceful fallback handling
+- Clean modular separation (UI → Services → Data)
+
+The focus of this version is **pipeline architecture and integration design**, preparing the system for real vision model integration.
 
 ---
 
-## 🎯 Goals
+## 🎯 MVP Capabilities
+
 - Upload plant image
-- Predict plant name
-- Provide watering, sunlight, and soil guidance
-- Build modular AI pipeline
+- Run prediction through a modular service layer
+- Display predicted plant name with confidence score
+- Retrieve plant care instructions from structured JSON database
+- Manual plant selection via dropdown
+- Error handling when predicted plant is not in care database
 
 ---
 
 ## 🛠 Tech Stack
+
 - Python
-- Streamlit (UI)
-- JSON-based structured data
-- Modular Architecture (UI → Logic → Data)
-- Environment-secured API keys
+- Streamlit (UI Layer)
+- JSON-based structured plant database
+- Modular architecture (UI → Services → Data)
+- Environment-secured API configuration
+- Git-based version control
+
+---
+
+## 🧠 Architecture Design
+
+User Upload → Streamlit UI → identify_plant() →
+Prediction Output → Care Lookup (JSON) → Display Results
+
+This separation ensures:
+- Clean scalability
+- Easy model replacement
+- Future AI model integration without UI changes
 
 ---
 
 ## 🚧 Current Status
-🛠 MVP Built (Vision API integration pending)
+
+✅ MVP Complete  
+⚠️ Prediction component currently uses placeholder logic  
+🚀 Vision-based plant classifier integration planned
 
 ---
 
-## 🚀 Next Phase (Upcoming Enhancements)
+## 🚀 Upcoming Enhancements (Next Iteration)
 
-- Image upload interface  
-- AI-powered image upload identification  
-- Displays predicted plant with confidence score  
-- Automatically generates care instructions  
-- Top-3 prediction output  
-- Vision API integration  
-- Local fallback plant database  
-- Deployable web app version  
+- Integrate pretrained plant image classification model
+- Map scientific names to common plant names
+- Improve prediction accuracy
+- Add top-3 prediction output
+- Expand local plant care database
+- Deploy web-hosted version
 
 ---
 
 ## 🗂 Folder Structure
 
+
 ```text
 project_3_plant_identification/
-├── app/
-├── assets/
-├── data/
-├── src/
+├── app/              # Streamlit UI
+├── services/         # Prediction logic
+├── src/              # Care data handling
+├── data/             # JSON plant database
+├── assets/           # Demo images
 ├── requirements.txt
 └── README.md
+---
+
+## 💡 Learning Outcome
+
+This project focuses on building production-style AI architecture before optimizing model accuracy.
+
+The goal is to design systems that are:
+- Modular
+- Scalable
+- Replaceable
+- Integration-ready
+
+Model accuracy improvements are planned in the next version.

@@ -28,9 +28,10 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 | Project | Description | Status |
 |---------|------------|--------|
 | AI Teacher Assistant | Document-aware Q&A assistant using lightweight RAG + Semantic Kernel | ✅ Completed |
-| Plant Identification Agent | Vision-based houseplant identification with care guidance | 🛠 In Progress |
+| Plant Identification Agent (PlantPal v1.0) | Streamlit MVP with prediction pipeline + JSON care DB (vision model planned) | ✅ MVP Complete |
 
 ---
+
 
 ## 📸 AI Teacher Assistant — Demo
 ![AI Teacher Assistant Demo](phase_2/project_2_ai_teacher_assistant/assets/demo.png)
@@ -70,13 +71,14 @@ ai-portfolio/
 └── phase_2/
     ├── project_2_ai_teacher_assistant/
     └── project_3_plant_identification/
+```
+## 🚀 What’s Next
+- Deploy live demos
+- Add multimodal workflows
+- Expand agent-based systems
 
-🚀 What’s Next
-Deploy live demos
-Add multimodal workflows
-Expand agent-based systems
+---
 
-📬 Connect
-LinkedIn: https://www.linkedin.com/in/aiyesha-ai-engineer/
+## 📬 Connect
+LinkedIn: https://www.linkedin.com/in/aiyesha-ai-engineer/  
 Email: aiyeshat@yahoo.com
-
