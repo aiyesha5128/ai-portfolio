@@ -39,7 +39,7 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 ![PlantPal AI Demo](assets/demo_v2.png)
 
 ### 🧠 System Architecture
-![Architecture](assets/architecture.png)
+![Architecture](assets/architecture1.png)
 
 ### Current Version
 - Streamlit UI
