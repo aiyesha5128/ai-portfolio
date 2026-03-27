@@ -5,7 +5,7 @@ This project is part of **Phase 2** of my AI Engineering Portfolio.
 ---
 ## 📸 Demo
 
-![PlantPal MVP](assets/demo.png)
+![PlantPal MVP](assets/demo_v2.png)
 ---
 ## 🔎 Overview
 
@@ -94,16 +94,22 @@ This separation ensures:
 
 ```text
 project_3_plant_identification
-├── app/                 # Streamlit UI
-├── services/            # Prediction logic
+├── app/                         # Streamlit UI
+├── services/                    # Prediction logic
 │   ├── image_identifier_v1.py   # Mock logic
 │   └── image_identifier_v2.py   # Vision API integration
-├── src/                 # Care data handling
-├── data/                # JSON plant database
-├── assets/              # Demo images
+├── src/                         # Care data handling
+├── data/                        # JSON plant database
+├── assets/                      # Images and diagrams
+│   ├── demo_v2/                 # Demo images
+│   └── architecture.png         # System architecture diagram
 ├── requirements.txt
 └── README.md
 ```
+
+### 🧠 System Architecture
+![Architecture](assets/architecture.png)
+
 ## 🔄 Version Evolution
 
 **v1 — MVP Architecture**
