@@ -28,18 +28,14 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 | Plant Identification Agent (PlantPal v2.0 — Vision Integrated) | Streamlit MVP with prediction pipeline + JSON care DB (Hugging Face API integrated) | ✅ MVP Complete |
 
 ---
+
 ## 📸 AI Teacher Assistant — Demo
 ![AI Teacher Assistant Demo](phase_2/project_2_ai_teacher_assistant/assets/demo.png)
 
 ---
-
-## 📸 Demo
-
-### 🌿 AI Prediction + Care Guide
-![PlantPal AI Demo](assets/demo_v2.png)
-
-### 🧠 System Architecture
-![Architecture](assets/architecture1.png)
+## 🌿 PlantPal — Demo
+![PlantPal AI Demo](phase_2/project_3_plant_identification/assets/demo_v2.png)
+![Architecture](phase_2/project_3_plant_identification/assets/architecture.png)
 
 ### Current Version
 - Streamlit UI
@@ -49,7 +45,7 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 - Graceful fallback for unknown plant predictions
 ---
 
-Note: Current model is a general image classifier and may return non-specific labels (e.g., "houseplant").
+Note: Current model is a general image classifier and may return broad labels (e.g., "houseplant").
 
 ## 🛠 Tech Stack
 Python | Azure OpenAI | Azure AI Search | Semantic Kernel | Streamlit | FastAPI | LangChain
