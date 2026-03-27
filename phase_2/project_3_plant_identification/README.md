@@ -76,6 +76,7 @@ This separation ensures:
 ## 🚧 Current Status
 
 ✅ MVP Complete  
+
 ⚠️ Prediction component uses a general image classification model, which may not  accurately identify specific houseplant species 
 🚀 Vision-based plant classifier integration planned
 
