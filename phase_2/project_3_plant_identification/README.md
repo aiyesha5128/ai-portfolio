@@ -101,7 +101,7 @@ project_3_plant_identification
 ├── src/                         # Care data handling
 ├── data/                        # JSON plant database
 ├── assets/                      # Images and diagrams
-│   ├── demo_v2/                 # Demo images
+│   ├── demo_v2.png                # Demo images
 │   └── architecture.png         # System architecture diagram
 ├── requirements.txt
 └── README.md
