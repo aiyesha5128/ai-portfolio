@@ -5,7 +5,6 @@ Welcome to my AI Engineering Portfolio.
 This repository highlights practical AI/ML and Generative AI projects I’ve built while transitioning into an AI Engineering career.
 
 ---
-
 ## 🔥 Areas of Focus
 - Generative AI — LLMs, Prompt Engineering, Agent Orchestration
 - Machine Learning — NLP & Computer Vision
@@ -14,7 +13,6 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 - Responsible AI — Evaluation, Groundedness, Safety
 
 ---
-
 ## 📌 Portfolio Roadmap
 
 ### 🧩 Phase 1 — AI Foundations & Practical ML + GenAI Tools
@@ -23,37 +21,40 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 | Outlier Detector + AI Slide Generator | Detects outliers in student datasets and auto-generates instructional slides | ✅ Completed |
 
 ---
-
 ### 🤖 Phase 2 — Enterprise AI Apps (RAG, Agents, Semantic Kernel)
 | Project | Description | Status |
 |---------|------------|--------|
 | AI Teacher Assistant | Document-aware Q&A assistant using lightweight RAG + Semantic Kernel | ✅ Completed |
-| Plant Identification Agent (PlantPal v1.0) | Streamlit MVP with prediction pipeline + JSON care DB (vision model planned) | ✅ MVP Complete |
+| Plant Identification Agent (PlantPal v2.0 — Vision Integrated) | Streamlit MVP with prediction pipeline + JSON care DB (Hugging Face API integrated) | ✅ MVP Complete |
 
 ---
-
-
 ## 📸 AI Teacher Assistant — Demo
 ![AI Teacher Assistant Demo](phase_2/project_2_ai_teacher_assistant/assets/demo.png)
 
 ---
 
-## 🌿 Plant Identification Agent — MVP Demo
-![PlantPal MVP](phase_2/project_3_plant_identification/assets/demo.png)
+## 📸 Demo
 
-**Current Version**
+### 🌿 AI Prediction + Care Guide
+![PlantPal AI Demo](assets/demo_v2.png)
+
+### 🧠 System Architecture
+![Architecture](assets/architecture.png)
+
+### Current Version
 - Streamlit UI
-- Plant name prediction (JSON-based logic)
-- Care instruction display
-- Vision API integration coming next
-
+- Image-based prediction using Hugging Face Inference API
+- Confidence score display
+- JSON-based care instruction lookup
+- Graceful fallback for unknown plant predictions
 ---
+
+Note: Current model is a general image classifier and may return non-specific labels (e.g., "houseplant").
 
 ## 🛠 Tech Stack
 Python | Azure OpenAI | Azure AI Search | Semantic Kernel | Streamlit | FastAPI | LangChain
 
 ---
-
 ## 🎯 Evaluation Focus
 - Groundedness
 - Retrieval Relevance
@@ -61,7 +62,6 @@ Python | Azure OpenAI | Azure AI Search | Semantic Kernel | Streamlit | FastAPI 
 - Responsible AI Practices
 
 ---
-
 ## 📂 Repository Structure
 
 ```text
@@ -78,7 +78,6 @@ ai-portfolio/
 - Expand agent-based systems
 
 ---
-
 ## 📬 Connect
 LinkedIn: https://www.linkedin.com/in/aiyesha-ai-engineer/  
 Email: aiyeshat@yahoo.com
