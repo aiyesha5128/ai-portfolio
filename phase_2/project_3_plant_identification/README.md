@@ -1,15 +1,12 @@
-# 🌿 Project 3 — PlantPal v1.0 — Plant Identification Agent (MVP)
+# 🌿 Project 3 — Plant Identification Agent (PlantPal)
 
 This project is part of **Phase 2** of my AI Engineering Portfolio.
 
 ---
-
 ## 📸 Demo
 
 ![PlantPal MVP](assets/demo.png)
-
 ---
-
 ## 🔎 Overview
 
 PlantPal is a modular AI-ready houseplant identification assistant built using Streamlit.
@@ -26,7 +23,6 @@ This MVP demonstrates a complete AI workflow architecture:
 The focus of this version is **pipeline architecture and integration design**, preparing the system for real vision model integration.
 
 ---
-
 ## 🎯 MVP Capabilities
 
 - Upload plant image
@@ -37,6 +33,11 @@ The focus of this version is **pipeline architecture and integration design**, p
 - Error handling when predicted plant is not in care database
 
 ---
+## ⚠️ Known Limitations
+
+- Current model is not specialized for houseplant species
+- Predictions may return generic labels (e.g., "houseplant")
+- Care guide defaults to generic plant care when species is unknown
 
 ## 🛠 Tech Stack
 
@@ -48,6 +49,18 @@ The focus of this version is **pipeline architecture and integration design**, p
 - Git-based version control
 
 ---
+## 🤖 AI Integration
+
+The prediction pipeline is designed to support real AI models.
+
+Current integration:
+- Hugging Face Inference API
+- Image classification model for plant identification
+
+The service layer (`identify_plant`) allows easy replacement of models without changing the UI layer.
+
+Note: The current model is a general-purpose classifier and may return 
+broad or non-specific labels (e.g., "houseplant" or plant conditions).
 
 ## 🧠 Architecture Design
 
@@ -60,15 +73,13 @@ This separation ensures:
 - Future AI model integration without UI changes
 
 ---
-
 ## 🚧 Current Status
 
 ✅ MVP Complete  
-⚠️ Prediction component currently uses placeholder logic  
+⚠️ Prediction component uses a general image classification model, which may not  accurately identify specific houseplant species 
 🚀 Vision-based plant classifier integration planned
 
 ---
-
 ## 🚀 Upcoming Enhancements (Next Iteration)
 
 - Integrate pretrained plant image classification model
@@ -79,14 +90,10 @@ This separation ensures:
 - Deploy web-hosted version
 
 ---
-
-## 🗂 Folder Structure
-
-
 ## 📂 Folder Structure
 
 ```text
-project_3_plantpal/
+project_3_plant_identification
 ├── app/                 # Streamlit UI
 ├── services/            # Prediction logic
 │   ├── image_identifier_v1.py   # Mock logic
@@ -97,11 +104,17 @@ project_3_plantpal/
 ├── requirements.txt
 └── README.md
 ```
+## 🔄 Version Evolution
 
-### Version Notes
+**v1 — MVP Architecture**
+- Randomized placeholder prediction logic
+- Focus on UI → Service → Data pipeline
+- JSON-based care database integration
 
-- v1 → Mock prediction logic (randomized output)
-- v2 → Hugging Face Vision model integration (API-based inference)
+**v2 — Vision Model Upgrade**
+- Integrated Hugging Face plant classification API
+- Real image-based prediction using Hugging Face API (general classifier)
+- Confidence score returned from model inference
 
 ## 💡 Learning Outcome
 

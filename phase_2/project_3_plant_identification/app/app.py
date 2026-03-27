@@ -2,61 +2,77 @@ import os
 import sys
 import streamlit as st
 
-# Add project root to Python path (so "services" and "src" can be imported)
+# Add project root to Python path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
 
-from services.image_identifier_v1 import identify_plant
+# Project imports
+from services.image_identifier_v2 import identify_plant
+from services.plant_care_ai import generate_care_guide
 from src.care import get_care, get_plant_names
-# Ensure imports work when running from project root
-sys.path.append(os.path.abspath("."))
 
 # -----------------------------
 # UI Header
 # -----------------------------
 st.title("🌿 Plant Identification Agent (MVP)")
-st.caption("MVP — JSON-based prediction (Vision API integration coming next)")
+st.caption("Image-based plant prediction + AI care guide")
 st.subheader("Sample Care Lookup")
 
 # -----------------------------
 # Upload Image
 # -----------------------------
-predicted_plant = None
-confidence = None
-
 uploaded_file = st.file_uploader(
     "Upload a plant image",
     type=["jpg", "jpeg", "png"]
 )
 
-# If user uploads an image, predict plant and show preview
+# -----------------------------
+# If image uploaded → predict plant
 if uploaded_file is not None:
+
     predicted_plant, confidence = identify_plant(uploaded_file)
 
-    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
-    st.success(f"Predicted Plant: {predicted_plant}")
-    st.write(f"Confidence: {confidence}")
+    col1, col2 = st.columns(2)
 
-# -----------------------------
-# Choose plant name to show care
-# -----------------------------
-if predicted_plant:
-    st.info(f"Using predicted plant: **{predicted_plant}**")
-    plant_name = predicted_plant
-else:
-    plant_name = st.selectbox("Choose a plant (manual selection)", get_plant_names())
+    with col1:
+        st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
 
-# -----------------------------
-# Show care instructions
-# -----------------------------
-info = get_care(plant_name)
+    with col2:
+        st.success(f"Predicted Plant: {predicted_plant}")
+        st.write(f"Confidence: {confidence}")
 
-if info:
-    st.write("### Care Instructions")
-    st.write(f"**Light:** {info['light']}")
-    st.write(f"**Water:** {info['water']}")
-    st.write(f"**Soil:** {info['soil']}")
-    st.write(f"**Temperature:** {info['temperature']}")
-    st.write(f"**Pet Safety:** {info['pet_safe']}")
-else:
-    st.warning("No care info found for this plant.")
+        # -----------------------------
+        # Detect generic / non-plant predictions
+        # -----------------------------
+        non_plants = ["pot", "flowerpot", "house plant"]
+
+        if any(word in predicted_plant.lower() for word in non_plants):
+            st.warning("Exact plant not identified. Showing general care guide.")
+
+            care = generate_care_guide("house plant")
+            if care:
+                st.subheader("General Plant Care Guide")
+                st.markdown(care)
+
+        else:
+            # -----------------------------
+            # AI-generated care
+            # -----------------------------
+            care = generate_care_guide(predicted_plant)
+            if care:
+                st.subheader("AI Care Guide")
+                st.markdown(care)
+
+            # -----------------------------
+            # Structured care
+            # -----------------------------
+            info = get_care(predicted_plant)
+            if info:
+                st.subheader("Care Instructions (Database)")
+                st.write(f"**Light:** {info['light']}")
+                st.write(f"**Water:** {info['water']}")
+                st.write(f"**Soil:** {info['soil']}")
+                st.write(f"**Temperature:** {info['temperature']}")
+                st.write(f"**Pet Safety:** {info['pet_safe']}")
+            else:
+                st.warning("No structured care info found for this plant.")
