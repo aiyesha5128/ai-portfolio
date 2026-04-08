@@ -22,10 +22,10 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 
 ---
 ### 🤖 Phase 2 — Enterprise AI Apps (RAG, Agents, Semantic Kernel)
-| Project | Description | Status |
-|---------|------------|--------|
-| AI Teacher Assistant | Document-aware Q&A assistant using lightweight RAG + Semantic Kernel | ✅ Completed |
-| Plant Identification Agent (PlantPal v2.0 — Vision Integrated) | Streamlit MVP with prediction pipeline + JSON care DB (Hugging Face API integrated) | ✅ MVP Complete |
+| Project                                                     | Description                                                                          | Status         |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------- |
+| AI Teacher Assistant                                        | Document-aware Q&A assistant using lightweight RAG + Semantic Kernel                 | ✅ Completed    |
+| Plant Identification Agent (PlantPal — Offline Local Model) | Streamlit MVP with local PyTorch model for plant image classification + JSON care DB | ✅ MVP Complete |
 
 ---
 
@@ -34,21 +34,23 @@ This repository highlights practical AI/ML and Generative AI projects I’ve bui
 
 ---
 ## 🌿 PlantPal — Demo
-![PlantPal AI Demo](phase_2/project_3_plant_identification/assets/demo_v2.png)
+![PlantPal AI Demo](phase_2/project_3_plant_identification/assets/identify_plant_locally.png)
 ![Architecture](phase_2/project_3_plant_identification/assets/architecture.png)
 
 ### Current Version
-- Streamlit UI
-- Image-based prediction using Hugging Face Inference API
-- Confidence score display
-- JSON-based care instruction lookup
-- Graceful fallback for unknown plant predictions
+
+Streamlit UI
+Image-based prediction using local offline PyTorch model
+Confidence score display
+JSON-based care instruction lookup
+Graceful fallback for unknown plant predictions
+
+Note: Now using a local offline model for reliable predictions — works without API tokens.
 ---
 
-Note: Current model is a general image classifier and may return broad labels (e.g., "houseplant").
 
 ## 🛠 Tech Stack
-Python | Azure OpenAI | Azure AI Search | Semantic Kernel | Streamlit | FastAPI | LangChain
+Python | PyTorch | Streamlit | JSON-based knowledge DB
 
 ---
 ## 🎯 Evaluation Focus
