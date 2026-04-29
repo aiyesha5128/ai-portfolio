@@ -1,0 +1,10 @@
+{
+  "new patient": {
+    "code": "99203",
+    "description": "Office visit for new patient"
+  },
+  "follow up": {
+    "code": "99213",
+    "description": "Established patient visit"
+  }
+}
