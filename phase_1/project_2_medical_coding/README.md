@@ -36,17 +36,14 @@ streamlit run app.py
 🧪 Example Input
 
 Patient is a new patient with dental caries.
-
 📊 Example Output
 ICD-10: K02.9 (Dental caries)
 CPT: 99203 (New patient visit)
+
 🔄 Future Improvements
-Multi-code detection
-NLP-based coding
-Improved keyword matching
+- Multi-code detection
+- NLP-based coding
+- Improved keyword matching
+
 📈 Status
-
-🚧 In Progress (Actively improving)
-
-```markdown id="4zjb4y"
 🚧 In Progress (Actively improving)
