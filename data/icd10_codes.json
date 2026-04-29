@@ -1,0 +1,10 @@
+{
+  "caries": {
+    "code": "K02.9",
+    "description": "Dental caries, unspecified"
+  },
+  "fever": {
+    "code": "R50.9",
+    "description": "Fever, unspecified"
+  }
+}
