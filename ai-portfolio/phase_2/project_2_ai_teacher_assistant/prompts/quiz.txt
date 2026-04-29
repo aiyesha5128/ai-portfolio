@@ -1,0 +1,15 @@
+
+
+
+
+Create 5 quiz questions WITH answers based only on the provided context.
+
+Rules:
+- Focus on key concepts and definitions, not general knowledge.
+- Do NOT invent facts that are not in the context.
+- Avoid questions about file names, testing, or tools unless the context is specifically about them.
+- Keep answers short (1–2 sentences max).
+
+Format exactly as:
+1) Q: ...
+   A: ...
